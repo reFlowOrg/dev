@@ -1,0 +1,28 @@
+{
+  "store": {
+    "title": "Tebex",
+    "href": "https://reflow-store.com/",
+    "newWindow": true
+  },
+  "index": {
+    "title": "About",
+    "theme": {
+      "pagination": false
+    }
+  },
+  "---": {
+    "type": "separator"
+  },
+  "bridge": {
+    "title": "Bridge",
+    "theme": {
+      "pagination": false
+    }
+  },
+  "unit": {
+    "title": "Unit",
+    "theme": {
+      "pagination": false
+    }
+  }
+}
