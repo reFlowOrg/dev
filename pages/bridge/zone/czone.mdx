@@ -7,9 +7,9 @@ Zone Id
 returns: `number`
 
 ```lua
-local zone = Zone.PolyZone({ ... })
+local myzone = Zone.PolyZone({ ... })
 
-zone.id
+myzone.id
 ```
 
 ## coords
@@ -19,9 +19,9 @@ Zone Coords
 returns: `vector3`
 
 ```lua
-local zone = Zone.PolyZone({ ... })
+local myzone = Zone.PolyZone({ ... })
 
-zone.coords()
+myzone.coords()
 ```
 
 ## distance
@@ -31,10 +31,10 @@ Zone Distance
 returns: `number`
 
 ```lua
-local zone = Zone.PolyZone({ ... })
+local myzone = Zone.PolyZone({ ... })
 
 -- Updates depending on player position
-zone.distance()
+myzone.distance()
 ```
 
 ## remove
@@ -42,9 +42,9 @@ zone.distance()
 Remove the zone
 
 ```lua
-local zone = Zone.PolyZone({ ... })
+local myzone = Zone.PolyZone({ ... })
 
-zone.remove()
+myzone.remove()
 ```
 
 ## contains
@@ -54,9 +54,9 @@ Check if a vector3 is inside the zone
 returns: `boolean`
 
 ```lua
-local zone = Zone.PolyZone({ ... })
+local myzone = Zone.PolyZone({ ... })
 
-zone.contains(vector3(0, 0, 0))
+myzone.contains(vector3(0, 0, 0))
 ```
 
 ## onEnter
