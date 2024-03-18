@@ -36,17 +36,43 @@ Framework.OpenShop(name)
 Framework.OpenShop('myshop')
 ```
 
+## GetItem
+
+Get Item From Player Inventory
+
+```lua
+Framework.GetItem(inventory, item, metadata, strict)
+```
+
+- inventory: `number | string`
+- item: `string`
+- metadata?: `table`
+- strict?: `boolean`
+    - Strictly match metadata or partial matching
+
+returns: [Item[]](/bridge/inventory/item)
+
+```lua
+-- Get Item From Player Inventory
+Framework.GetItem(source, 'water_bottle')
+
+-- Get Item From Stash
+Framework.GetItem('mystash', 'water_bottle')
+```
+
 ## HasItem
 
 Check if a player has an item or items
 
 ```lua
-Framework.HasItem(items, count, metadata)
+Framework.HasItem(items, count, metadata, strict)
 ```
 
 - items: `string | string[] | table<string, number>`
 - count?: `number`
 - metadata?: `table`
+- strict?: `boolean`
+    - Strictly match metadata or partial matching
 
 returns: `boolean`
 

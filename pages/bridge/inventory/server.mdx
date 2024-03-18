@@ -81,12 +81,14 @@ Framework.RemoveItem('mystash', 'water_bottle', 1, nil, 1)
 Get Item From Inventory
 
 ```lua
-Framework.GetItem(inventory, item, metadata)
+Framework.GetItem(inventory, item, metadata, strict)
 ```
 
 - inventory: `number | string`
 - item: `string`
 - metadata?: `table`
+- strict?: `boolean`
+    - Strictly match metadata or partial matching
 
 returns: [Item[]](/bridge/inventory/item)
 
@@ -103,12 +105,14 @@ Framework.GetItem('mystash', 'water_bottle')
 Get Item Count From Inventory
 
 ```lua
-Framework.GetItemCount(inventory, item, metadata)
+Framework.GetItemCount(inventory, item, metadata, strict)
 ```
 
 - inventory: `number | string`
 - item: `string`
 - metadata?: `table`
+- strict?: `boolean`
+    - Strictly match metadata or partial matching
 
 returns: `number`
 
@@ -125,13 +129,15 @@ Framework.GetItemCount('mystash', 'water_bottle')
 Check if a player or a stash has an item
 
 ```lua
-Framework.HasItem(inventory, items, count, metadata)
+Framework.HasItem(inventory, items, count, metadata, strict)
 ```
 
 - inventory: `number | string`
 - items: `string | string[] | table<string, number>`
 - count?: `number`
 - metadata?: `table`
+- strict?: `boolean`
+    - Strictly match metadata or partial matching
 
 returns: `boolean`
 
