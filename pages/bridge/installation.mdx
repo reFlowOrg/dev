@@ -1,23 +1,40 @@
 import { Callout } from 'nextra-theme-docs';
 
-## Installing The Bridge
-
 <Callout type="warning" emoji="⚠️">
   For Developers Only
 </Callout>
 
+## Installing Types
+
+To be able to use the bridge types copy the `.vscode` into the root of your resource
+
+<Callout type="warning" emoji="ℹ️">
+  You need the vscode extension `Lua Language Server coded by Lua` published by sumneko
+</Callout>
+
+![vscodeextension](/static/vscodeextension.png)
+
+![types](/static/frameworktype.png)
+
+## Using The Bridge
+
 To be able to load the bridge you need to add the following to your fxmanifest.lua
+
+<Callout type="warning" emoji="ℹ️">
+  Change The Name Of The Bridge To Whatever You Named Your Bridge
+</Callout>
 
 ```lua
 lua54 'yes'
 use_experimental_fxv2_oal 'yes'
+bridge 'reFlow-Bridge'
 
 shared_scripts {
-    'bridge/bridge.lua',
+    '@reFlow-Bridge/bridge.lua',
 }
 
+-- If You Are Using Language Files Included The Following
 files {
-    'bridge/**/**/client.lua',
-    'bridge/**/*.lua',
+    'locales/*.json', 
 }
 ```
