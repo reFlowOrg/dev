@@ -29,6 +29,12 @@ lua54 'yes'
 use_experimental_fxv2_oal 'yes'
 bridge 'reFlow-Bridge'
 
+-- If you want to disable a single module (Not Required)
+bridge_disable 'target'
+
+-- If you want to disable a multiple modules (Not Required)
+bridge_disable { 'target', 'zone' }
+
 shared_scripts {
     '@reFlow-Bridge/bridge.lua',
 }
@@ -38,3 +44,12 @@ files {
     'locales/*.json', 
 }
 ```
+
+## Module Names
+
+- `database`  ***Disables Database Module***
+- `framework` ***Disables Framework Module***
+- `inventory` ***Disables Inventory Module***
+- `target` ***Disables Target Module***
+- `zone` ***Disables Zone Module***
+- `locale` ***Disables Locale Module***
