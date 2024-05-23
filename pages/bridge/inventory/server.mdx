@@ -1,3 +1,5 @@
+import { Callout } from 'nextra-theme-docs';
+
 # Inventory Server
 
 ## Items
@@ -304,6 +306,10 @@ Framework.RegisterStash('mystash', 10, 5000, nil, { ['mygang'] = 0 })
 ## RegisterShop
 
 Register Shop
+
+<Callout type="warning" emoji="⚠️">
+  When Using CodeM Inventory Shops Should Be Registered in `codem-inventory/config/shops.lua` With The Same Name  
+</Callout>
 
 ```lua
 Framework.RegisterShop(name, data)
