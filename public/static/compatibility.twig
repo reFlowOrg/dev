@@ -1,51 +1,30 @@
 <style>
     .bridge-table {
-        margin: 1rem 0;
-        width: 100%;
-        border: none;
-        border-collapse:collapse;
+        border-color: inherit;
+        border-collapse: collapse;
+        text-indent: 0;
+        border-color: rgba(75, 85, 99, 1.0);
     }
 
-    .bridge-table td, .bridge-table th {
-        background: inherit;
-        padding: .25rem;
-        width: 2rem;
-        text-align: center;
-        line-height: 1.5;
-        border: 0px;
+    .bridge-table tr {
+        border-top-width: 1px;
     }
 
-    .bridge-table-header-text {
-        left: calc(50% - .5rem);
-        line-height: 1;
+    .bridge-table-padding {
         padding-top: .5rem;
-        position: relative;
-        transform: rotate(180deg);
-        white-space: nowrap;
-        writing-mode: vertical-rl;
-        display: block;
-        height: 5rem;
-        width: 5rem;
-    }
-
-    .bridge-table-header-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .bridge-table-header-icon img {
-        height: 34px;
+        padding-bottom: .5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .bridge-table-category {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(75, 85, 99, .2);
+        height: 2rem;
     }
 
     .bridge-table-resource {
         color: gray;
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(243, 244, 246, .2);
     }
 </style>
 
@@ -53,132 +32,119 @@
     <thead>
         <tr>
             <th></th>
-            <th>
-                <div class="bridge-table-header-text">ESX</div>
-                <div class="bridge-table-header-icon"><img src="https://dev.reflow-store.com/static/icons/esx.png"></div>
-            </th>
-            <th>
-                <div class="bridge-table-header-text">QBCore</div>
-                <div class="bridge-table-header-icon"><img src="https://dev.reflow-store.com/static/icons/qbcore.png"></div>
-            </th>
-            <th>
-                <div class="bridge-table-header-text">QBox</div>
-                <div class="bridge-table-header-icon"><img src="https://dev.reflow-store.com/static/icons/qbox.png"></div>
-            </th>
+            <th class="bridge-table-padding" align="center">ESX</th>
+            <th class="bridge-table-padding" align="center">QBCore</th>
+            <th class="bridge-table-padding" align="center">QBox</th>
         </tr>
     </thead>
     <tbody>
         <tr class="bridge-table-category">
-            <td><strong>Database</strong></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="bridge-table-padding" align="center"><strong>Database</strong></td>
+            <td class="bridge-table-padding" align="center"></td>
+            <td class="bridge-table-padding" align="center"></td>
+            <td class="bridge-table-padding" align="center"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>oxmysql</td>
-            <td>
-                <div>
-                    <img src="https://dev.reflow-store.com/static/check.png">
-                </div>
-            </td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center">oxmysql</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
         </tr>
         <tr class="bridge-table-category">
-            <td><strong>Inventory</strong></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="bridge-table-padding" align="center"><strong>Inventory</strong></td>
+            <td class="bridge-table-padding" align="center"></td>
+            <td class="bridge-table-padding" align="center"></td>
+            <td class="bridge-table-padding" align="center"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>qb-inventory</td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center">qb-inventory</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>lj-inventory</td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center">lj-inventory</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>aj-inventory</td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center">aj-inventory</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>ax-inventory</td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center">ax-inventory</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>ps-inventory</td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center">ps-inventory</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>ox-inventory</td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center">ox-inventory</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>qs-inventory</td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center">qs-inventory</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>codem-inventory</td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center">codem-inventory</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
         </tr>
         <tr class="bridge-table-category">
-            <td><strong>Target</strong></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="bridge-table-padding" align="center"><strong>Target</strong></td>
+            <td class="bridge-table-padding" align="center"></td>
+            <td class="bridge-table-padding" align="center"></td>
+            <td class="bridge-table-padding" align="center"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>ox_target</td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center">ox_target</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>qb-target</td>
-            <td><img src="https://dev.reflow-store.com/static/cross.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center">qb-target</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/cross.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>qtarget</td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center">qtarget</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
         </tr>
         <tr class="bridge-table-category">
-            <td><strong>Zone</strong></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="bridge-table-padding" align="center"><strong>Zone</strong></td>
+            <td class="bridge-table-padding" align="center"></td>
+            <td class="bridge-table-padding" align="center"></td>
+            <td class="bridge-table-padding" align="center"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>ox_lib</td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center">ox_lib</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
         </tr>
         <tr class="bridge-table-resource">
-            <td>PolyZone</td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
-            <td><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center">PolyZone</td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
+            <td class="bridge-table-padding" align="center"><img src="https://dev.reflow-store.com/static/check.png"></td>
         </tr>
     </tbody>
 </table>
