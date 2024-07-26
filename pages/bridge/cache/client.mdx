@@ -1,0 +1,92 @@
+# Cache Client
+
+## PlayerId
+
+Cached version of PlayerId()
+
+```lua
+Cache.PlayerId
+```
+returns: `number` | `boolean`
+
+## ServerId
+
+Cached version of GetPlayerServerId()
+
+```lua
+Cache.ServerId
+```
+returns: `number` | `boolean`
+
+## Ped
+
+Cached version of PlayerPedId()
+
+```lua
+Cache.Ped
+```
+returns: `number` | `boolean`
+
+## Vehicle
+
+Cached version of GetVehiclePedIsIn()
+
+```lua
+Cache.Vehicle
+```
+returns: `number` | `boolean`
+
+## Weapon
+
+Cached version of GetCurrentPedWeapon()
+
+```lua 
+Cache.Weapon
+```
+returns: `number` | `boolean`
+
+## Set
+
+Register custom cache key/value pair this will trigger the cache event handler when it's registered and updated
+
+```lua
+Cache.Set(key, value)
+```
+
+- key: `string`
+- value: `any`
+
+```lua
+Cache.Set("Test", "My Value")
+
+print(Cache.Test)
+```
+
+## On
+
+Register cache event handler that triggers when a cached value is registered or updated
+
+```lua
+Cache.On(key, cb)
+```
+
+- key: `string`
+- cb: `function(value: any, oldvalue: any)`
+
+```lua
+Cache.On("Weapon", function(value, oldvalue)
+    if value then
+        print("Weapon Equipped", value)
+    else
+        print("Weapon UnEquipped")
+    end
+end)
+
+Cache.On("Vehicle", function(value, oldvalue)
+    if value then
+        print("Entered Vehicle", value)
+    else
+        print("Exited Vehicle", oldvalue)
+    end
+end)
+```

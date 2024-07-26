@@ -361,10 +361,10 @@ returns: `boolean`
 
 ## HasJob
 
-Check if player has job and or grade
+Check if player has job and or grade and is on duty or not
 
 ```lua
-Framework.HasJob(job, player)
+Framework.HasJob(job, player, duty)
 ```
 
 - job: `string | table`
@@ -376,6 +376,10 @@ returns: `boolean`
 Framework.HasJob('police', Framework.Player)
 
 Framework.HasJob({ ['police'] = 1 }, Framework.Player)
+
+Framework.HasJob('police', Framework.Player, true)
+
+Framework.HasJob({ ['police'] = 1 }, Framework.Player, true)
 ```
 
 ## HasGang

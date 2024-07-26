@@ -5,8 +5,8 @@
 - job? `string | string[] | table<string, number>`
 - gang? `string | string[] | table<string, number>`
 - items? `string | string[] | table<string, number>`
-- canInteract `function(entity?: number): boolean?`
-- onSelect? `function(data: table)`
+- canInteract `function(entity?: number, coords?: vector3, distance?: number, data?: table): boolean?`
+- onSelect? `function(data?: { entity: number, coords: vector3, distance: number, [string]: any })`
 - export? `string`
 - event? `string`
 - serverEvent? `string`

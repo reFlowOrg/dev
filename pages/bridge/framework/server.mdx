@@ -138,10 +138,6 @@ Framework.GetPlayerByIdentifier(identifier)
 
 returns: [Player](/bridge/framework/player) | `nil`
 
-```lua
-Framework.GetPlayer(source)
-```
-
 ## DoesJobExist
 
 ```lua
@@ -260,3 +256,23 @@ Framework.IsPlayerDead(source)
 - source `number`
 
 returns: `boolean`
+
+## HasPermission
+
+Check If A Player Has Specific Permissions
+
+```lua
+Framework.HasPermission(source, permission)
+```
+
+- source `number`
+- permission `string | table`
+
+returns: `boolean`
+
+```lua
+Framework.HasPermission(source, "admin")
+
+Framework.HasPermission(source, {"admin", "user"})
+```
+

@@ -41,10 +41,9 @@ Framework.OpenShop('myshop')
 Get Item From Player Inventory
 
 ```lua
-Framework.GetItem(inventory, item, metadata, strict)
+Framework.GetItem(item, metadata, strict)
 ```
 
-- inventory: `number | string`
 - item: `string`
 - metadata?: `table`
 - strict?: `boolean`
@@ -53,11 +52,7 @@ Framework.GetItem(inventory, item, metadata, strict)
 returns: [Item[]](/bridge/inventory/item)
 
 ```lua
--- Get Item From Player Inventory
-Framework.GetItem(source, 'water_bottle')
-
--- Get Item From Stash
-Framework.GetItem('mystash', 'water_bottle')
+Framework.GetItem('water_bottle')
 ```
 
 ## HasItem

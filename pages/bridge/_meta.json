@@ -6,5 +6,7 @@
   "inventory": "Inventory",
   "target": "Target",
   "zone": "Zone",
-  "utilities": "Utilities"
+  "cache": "Cache",
+  "utilities": "Utilities",
+  "shared": "Shared"
 }
