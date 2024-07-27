@@ -1,0 +1,25 @@
+# Bridge Version
+
+The version module allows you to display version info in the server console, this works for both the bridge and scripts using the bridge by simply including a `github` metadata entry.
+
+```lua
+name 'reFlow-Bridge'
+author 'reFlow'
+version '1.0.0'
+description 'reFlow Bridge - reflow-store.com'
+github 'https://github.com/reFlowStore/versions'
+```
+
+The version module will look for the `name` metadata entry in the fxmanifest and look for that file to compare version number and get the changelog.
+
+You can store all resource version info under one single repo with creating a file `YourScriptName.json` with the contents of the example below.
+
+```json filename="reFlow-Bridge.json" copy
+{
+    "version": "1.0.1",
+    "changelog": [
+        "Uploaded Version File",
+        "Increased Version Number To v1.0.1"
+    ]
+}
+```

@@ -82,7 +82,7 @@ const config: DocsThemeConfig = {
     </>
   ),
   project: {
-    link: 'https://github.com/reFlowOrg',
+    link: 'https://github.com/reFlowStore',
   },
   chat: {
     link: 'https://discord.gg/reflow',
@@ -97,7 +97,7 @@ const config: DocsThemeConfig = {
     ),
   },
   */
-  docsRepositoryBase: 'https://github.com/reFlowOrg/dev/tree/main',
+  docsRepositoryBase: 'https://github.com/reFlowStore/dev/tree/main',
   footer: {
     text: (
       <span>
